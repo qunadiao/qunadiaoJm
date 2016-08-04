@@ -15,7 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        //导航条白色
+        UINavigationBar.appearance().tintColor = UIColor.whiteColor()
+        //导航条字体颜色
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
+        //导航条背景颜色
+        UINavigationBar.appearance().barTintColor = UIColor.init(red: 30/255, green: 144/255, blue: 255/255, alpha: 1)
+        
         return true
     }
 
