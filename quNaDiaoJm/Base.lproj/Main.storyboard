@@ -175,7 +175,7 @@
         <!--钓场-->
         <scene sceneID="Jss-fL-pNk">
             <objects>
-                <viewController id="1Cf-QY-8Ma" customClass="FishingSpotViewController" customModule="quNaDiaoJm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Cf-QY-8Ma" customClass="FishingSportViewController2" customModule="quNaDiaoJm" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="QDW-Qu-XwK"/>
                         <viewControllerLayoutGuide type="bottom" id="qsq-h0-rge"/>
@@ -183,13 +183,48 @@
                     <view key="view" contentMode="scaleToFill" id="T1o-lk-Iib">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UU3-87-Dr3">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="4jk-tH-u6o" style="IBUITableViewCellStyleDefault" id="C2m-ae-Gwe">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C2m-ae-Gwe" id="Eck-vW-gXx">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4jk-tH-u6o">
+                                                    <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1Cf-QY-8Ma" id="tW3-Dq-Rtr"/>
+                                    <outlet property="delegate" destination="1Cf-QY-8Ma" id="kUk-Up-B3T"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UU3-87-Dr3" firstAttribute="leading" secondItem="T1o-lk-Iib" secondAttribute="leading" id="P6B-TZ-7cP"/>
+                            <constraint firstItem="UU3-87-Dr3" firstAttribute="top" secondItem="T1o-lk-Iib" secondAttribute="top" id="iVl-Hc-gvQ"/>
+                            <constraint firstItem="qsq-h0-rge" firstAttribute="top" secondItem="UU3-87-Dr3" secondAttribute="bottom" id="sn0-lJ-qNh"/>
+                            <constraint firstAttribute="trailing" secondItem="UU3-87-Dr3" secondAttribute="trailing" id="xff-6Z-S2r"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="钓场" image="FishingSpot" id="5QU-g4-MND"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WeY-cP-Sf7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166" y="-1151"/>
+            <point key="canvasLocation" x="165" y="-1151"/>
         </scene>
         <!--主页-->
         <scene sceneID="JY5-p8-nXr">
