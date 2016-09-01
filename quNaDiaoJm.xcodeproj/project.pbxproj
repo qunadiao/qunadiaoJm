@@ -20,6 +20,8 @@
 		18EFF0091D3020C7003CF70A /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFF0081D3020C7003CF70A /* MineViewController.swift */; };
 		18EFF00B1D3024F3003CF70A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EFF00A1D3024F3003CF70A /* MapKit.framework */; };
 		18EFF00D1D3024FC003CF70A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EFF00C1D3024FC003CF70A /* CoreLocation.framework */; };
+		7F17CAC11D76EDD20077AF73 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17CAC01D76EDD20077AF73 /* DetailTableViewCell.swift */; };
+		7F17CAC31D77B83B0077AF73 /* FishingSpot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F17CAC21D77B83B0077AF73 /* FishingSpot.swift */; };
 		7F1BEA2A1D4CD7F2008AF979 /* AlbumOperateMore@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1BE9581D4CD7F2008AF979 /* AlbumOperateMore@2x.png */; };
 		7F1BEA2B1D4CD7F2008AF979 /* AlbumOperateMoreHL@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1BE9591D4CD7F2008AF979 /* AlbumOperateMoreHL@2x.png */; };
 		7F1BEA2C1D4CD7F2008AF979 /* AlbumTriangleB.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1BE95A1D4CD7F2008AF979 /* AlbumTriangleB.png */; };
@@ -230,8 +232,31 @@
 		7F1BEAF91D4CD7F2008AF979 /* f099@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1BEA281D4CD7F2008AF979 /* f099@2x.png */; };
 		7F1BEAFA1D4CD7F2008AF979 /* people@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F1BEA291D4CD7F2008AF979 /* people@2x.png */; };
 		7F27EFE51D40C1AE00560077 /* lingmeng.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F27EFE41D40C1AE00560077 /* lingmeng.png */; };
-		7F9FA5351D69871C00578B63 /* FishingSportViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9FA5341D69871C00578B63 /* FishingSportViewController2.swift */; };
 		7F9FA53B1D698E8200578B63 /* FishIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA53A1D698E8200578B63 /* FishIcon.jpg */; };
+		7F9FA53D1D69A04B00578B63 /* FishingSpotTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9FA53C1D69A04B00578B63 /* FishingSpotTableViewController.swift */; };
+		7F9FA54F1D69A90C00578B63 /* 古明地恋.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA53E1D69A90C00578B63 /* 古明地恋.jpeg */; };
+		7F9FA5501D69A90C00578B63 /* 古明地觉.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA53F1D69A90C00578B63 /* 古明地觉.jpg */; };
+		7F9FA5511D69A90C00578B63 /* 霍青娥.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5401D69A90C00578B63 /* 霍青娥.jpg */; };
+		7F9FA5521D69A90C00578B63 /* 洩矢诹访子.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5411D69A90C00578B63 /* 洩矢诹访子.jpg */; };
+		7F9FA5531D69A90C00578B63 /* 雾雨魔理沙.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5421D69A90C00578B63 /* 雾雨魔理沙.jpeg */; };
+		7F9FA5541D69A90C00578B63 /* 西行寺幽幽子.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5431D69A90C00578B63 /* 西行寺幽幽子.jpg */; };
+		7F9FA5551D69A90C00578B63 /* 帕秋莉诺蕾姬.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5441D69A90C00578B63 /* 帕秋莉诺蕾姬.jpg */; };
+		7F9FA5561D69A90C00578B63 /* 魂魄妖梦.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5451D69A90C00578B63 /* 魂魄妖梦.jpeg */; };
+		7F9FA5571D69A90C00578B63 /* 蕾米莉亚斯卡雷特.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5461D69A90C00578B63 /* 蕾米莉亚斯卡雷特.jpg */; };
+		7F9FA5581D69A90C00578B63 /* 蓬莱山辉夜.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5471D69A90C00578B63 /* 蓬莱山辉夜.jpeg */; };
+		7F9FA5591D69A90C00578B63 /* 芙兰朵露斯卡雷特.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5481D69A90C00578B63 /* 芙兰朵露斯卡雷特.jpg */; };
+		7F9FA55A1D69A90C00578B63 /* 十六夜咲夜.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5491D69A90C00578B63 /* 十六夜咲夜.jpg */; };
+		7F9FA55B1D69A90C00578B63 /* 八云紫.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA54A1D69A90C00578B63 /* 八云紫.jpg */; };
+		7F9FA55C1D69A90C00578B63 /* 博丽灵梦.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA54B1D69A90C00578B63 /* 博丽灵梦.jpeg */; };
+		7F9FA55D1D69A90C00578B63 /* 藤原妹红.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA54C1D69A90C00578B63 /* 藤原妹红.jpeg */; };
+		7F9FA55E1D69A90C00578B63 /* 射命丸文.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA54D1D69A90C00578B63 /* 射命丸文.jpeg */; };
+		7F9FA55F1D69A90C00578B63 /* 东风谷早苗.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA54E1D69A90C00578B63 /* 东风谷早苗.png */; };
+		7F9FA5611D69ACA700578B63 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9FA5601D69ACA700578B63 /* CustomTableViewCell.swift */; };
+		7F9FA5681D6A0D0700578B63 /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5641D6A0D0700578B63 /* contact.png */; };
+		7F9FA5691D6A0D0700578B63 /* distance.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5651D6A0D0700578B63 /* distance.png */; };
+		7F9FA56A1D6A0D0700578B63 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5661D6A0D0700578B63 /* location.png */; };
+		7F9FA56B1D6A0D0700578B63 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F9FA5671D6A0D0700578B63 /* search.png */; };
+		7F9FA5711D6ACAF200578B63 /* DetailFishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9FA5701D6ACAF200578B63 /* DetailFishTableViewController.swift */; };
 		7FE63F151D3B68C0007F201A /* album.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE63F101D3B68C0007F201A /* album.png */; };
 		7FE63F161D3B68C0007F201A /* collet.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE63F111D3B68C0007F201A /* collet.png */; };
 		7FE63F171D3B68C0007F201A /* edition.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FE63F121D3B68C0007F201A /* edition.png */; };
@@ -278,6 +303,9 @@
 		18EFF0081D3020C7003CF70A /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		18EFF00A1D3024F3003CF70A /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		18EFF00C1D3024FC003CF70A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7F17CAC01D76EDD20077AF73 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		7F17CAC21D77B83B0077AF73 /* FishingSpot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishingSpot.swift; sourceTree = "<group>"; };
+		7F17CAC41D77B93A0077AF73 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		7F1BE9581D4CD7F2008AF979 /* AlbumOperateMore@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlbumOperateMore@2x.png"; sourceTree = "<group>"; };
 		7F1BE9591D4CD7F2008AF979 /* AlbumOperateMoreHL@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AlbumOperateMoreHL@2x.png"; sourceTree = "<group>"; };
 		7F1BE95A1D4CD7F2008AF979 /* AlbumTriangleB.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AlbumTriangleB.png; sourceTree = "<group>"; };
@@ -488,8 +516,31 @@
 		7F1BEA281D4CD7F2008AF979 /* f099@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "f099@2x.png"; sourceTree = "<group>"; };
 		7F1BEA291D4CD7F2008AF979 /* people@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "people@2x.png"; sourceTree = "<group>"; };
 		7F27EFE41D40C1AE00560077 /* lingmeng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lingmeng.png; sourceTree = "<group>"; };
-		7F9FA5341D69871C00578B63 /* FishingSportViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishingSportViewController2.swift; sourceTree = "<group>"; };
 		7F9FA53A1D698E8200578B63 /* FishIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = FishIcon.jpg; sourceTree = "<group>"; };
+		7F9FA53C1D69A04B00578B63 /* FishingSpotTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FishingSpotTableViewController.swift; sourceTree = "<group>"; };
+		7F9FA53E1D69A90C00578B63 /* 古明地恋.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "古明地恋.jpeg"; sourceTree = "<group>"; };
+		7F9FA53F1D69A90C00578B63 /* 古明地觉.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "古明地觉.jpg"; sourceTree = "<group>"; };
+		7F9FA5401D69A90C00578B63 /* 霍青娥.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "霍青娥.jpg"; sourceTree = "<group>"; };
+		7F9FA5411D69A90C00578B63 /* 洩矢诹访子.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "洩矢诹访子.jpg"; sourceTree = "<group>"; };
+		7F9FA5421D69A90C00578B63 /* 雾雨魔理沙.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "雾雨魔理沙.jpeg"; sourceTree = "<group>"; };
+		7F9FA5431D69A90C00578B63 /* 西行寺幽幽子.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "西行寺幽幽子.jpg"; sourceTree = "<group>"; };
+		7F9FA5441D69A90C00578B63 /* 帕秋莉诺蕾姬.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "帕秋莉诺蕾姬.jpg"; sourceTree = "<group>"; };
+		7F9FA5451D69A90C00578B63 /* 魂魄妖梦.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "魂魄妖梦.jpeg"; sourceTree = "<group>"; };
+		7F9FA5461D69A90C00578B63 /* 蕾米莉亚斯卡雷特.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "蕾米莉亚斯卡雷特.jpg"; sourceTree = "<group>"; };
+		7F9FA5471D69A90C00578B63 /* 蓬莱山辉夜.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "蓬莱山辉夜.jpeg"; sourceTree = "<group>"; };
+		7F9FA5481D69A90C00578B63 /* 芙兰朵露斯卡雷特.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "芙兰朵露斯卡雷特.jpg"; sourceTree = "<group>"; };
+		7F9FA5491D69A90C00578B63 /* 十六夜咲夜.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "十六夜咲夜.jpg"; sourceTree = "<group>"; };
+		7F9FA54A1D69A90C00578B63 /* 八云紫.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "八云紫.jpg"; sourceTree = "<group>"; };
+		7F9FA54B1D69A90C00578B63 /* 博丽灵梦.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "博丽灵梦.jpeg"; sourceTree = "<group>"; };
+		7F9FA54C1D69A90C00578B63 /* 藤原妹红.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "藤原妹红.jpeg"; sourceTree = "<group>"; };
+		7F9FA54D1D69A90C00578B63 /* 射命丸文.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "射命丸文.jpeg"; sourceTree = "<group>"; };
+		7F9FA54E1D69A90C00578B63 /* 东风谷早苗.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "东风谷早苗.png"; sourceTree = "<group>"; };
+		7F9FA5601D69ACA700578B63 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		7F9FA5641D6A0D0700578B63 /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
+		7F9FA5651D6A0D0700578B63 /* distance.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = distance.png; sourceTree = "<group>"; };
+		7F9FA5661D6A0D0700578B63 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		7F9FA5671D6A0D0700578B63 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		7F9FA5701D6ACAF200578B63 /* DetailFishTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailFishTableViewController.swift; sourceTree = "<group>"; };
 		7FE63F101D3B68C0007F201A /* album.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = album.png; sourceTree = "<group>"; };
 		7FE63F111D3B68C0007F201A /* collet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = collet.png; sourceTree = "<group>"; };
 		7FE63F121D3B68C0007F201A /* edition.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edition.png; sourceTree = "<group>"; };
@@ -834,6 +885,8 @@
 		7F9FA5361D69882A00578B63 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7F17CAC21D77B83B0077AF73 /* FishingSpot.swift */,
+				7F9FA5621D6A0D0700578B63 /* 钓场详情页面（按钮） */,
 				7F9FA5391D698E6B00578B63 /* FishingSpotImage */,
 			);
 			name = Model;
@@ -842,6 +895,7 @@
 		7F9FA5371D69883300578B63 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				18EFF0021D302086003CF70A /* FishingSpotViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -849,8 +903,11 @@
 		7F9FA5381D69884200578B63 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				18EFF0021D302086003CF70A /* FishingSpotViewController.swift */,
-				7F9FA5341D69871C00578B63 /* FishingSportViewController2.swift */,
+				7F9FA53C1D69A04B00578B63 /* FishingSpotTableViewController.swift */,
+				7F9FA5601D69ACA700578B63 /* CustomTableViewCell.swift */,
+				7F9FA5701D6ACAF200578B63 /* DetailFishTableViewController.swift */,
+				7F17CAC01D76EDD20077AF73 /* DetailTableViewCell.swift */,
+				7F17CAC41D77B93A0077AF73 /* MyPlayground.playground */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -858,9 +915,45 @@
 		7F9FA5391D698E6B00578B63 /* FishingSpotImage */ = {
 			isa = PBXGroup;
 			children = (
+				7F9FA53E1D69A90C00578B63 /* 古明地恋.jpeg */,
+				7F9FA53F1D69A90C00578B63 /* 古明地觉.jpg */,
+				7F9FA5401D69A90C00578B63 /* 霍青娥.jpg */,
+				7F9FA5411D69A90C00578B63 /* 洩矢诹访子.jpg */,
+				7F9FA5421D69A90C00578B63 /* 雾雨魔理沙.jpeg */,
+				7F9FA5431D69A90C00578B63 /* 西行寺幽幽子.jpg */,
+				7F9FA5441D69A90C00578B63 /* 帕秋莉诺蕾姬.jpg */,
+				7F9FA5451D69A90C00578B63 /* 魂魄妖梦.jpeg */,
+				7F9FA5461D69A90C00578B63 /* 蕾米莉亚斯卡雷特.jpg */,
+				7F9FA5471D69A90C00578B63 /* 蓬莱山辉夜.jpeg */,
+				7F9FA5481D69A90C00578B63 /* 芙兰朵露斯卡雷特.jpg */,
+				7F9FA5491D69A90C00578B63 /* 十六夜咲夜.jpg */,
+				7F9FA54A1D69A90C00578B63 /* 八云紫.jpg */,
+				7F9FA54B1D69A90C00578B63 /* 博丽灵梦.jpeg */,
+				7F9FA54C1D69A90C00578B63 /* 藤原妹红.jpeg */,
+				7F9FA54D1D69A90C00578B63 /* 射命丸文.jpeg */,
+				7F9FA54E1D69A90C00578B63 /* 东风谷早苗.png */,
 				7F9FA53A1D698E8200578B63 /* FishIcon.jpg */,
 			);
 			name = FishingSpotImage;
+			sourceTree = "<group>";
+		};
+		7F9FA5621D6A0D0700578B63 /* 钓场详情页面（按钮） */ = {
+			isa = PBXGroup;
+			children = (
+				7F9FA5631D6A0D0700578B63 /* 钓场详情页面 */,
+			);
+			path = "钓场详情页面（按钮）";
+			sourceTree = "<group>";
+		};
+		7F9FA5631D6A0D0700578B63 /* 钓场详情页面 */ = {
+			isa = PBXGroup;
+			children = (
+				7F9FA5641D6A0D0700578B63 /* contact.png */,
+				7F9FA5651D6A0D0700578B63 /* distance.png */,
+				7F9FA5661D6A0D0700578B63 /* location.png */,
+				7F9FA5671D6A0D0700578B63 /* search.png */,
+			);
+			path = "钓场详情页面";
 			sourceTree = "<group>";
 		};
 		7FE63F0F1D3B68C0007F201A /* icon */ = {
@@ -1058,7 +1151,9 @@
 				7F1BEAAA1D4CD7F2008AF979 /* f060.png in Resources */,
 				7F1BEAA41D4CD7F2008AF979 /* f057.png in Resources */,
 				7F1BEAF31D4CD7F2008AF979 /* f096@2x.png in Resources */,
+				7F9FA5561D69A90C00578B63 /* 魂魄妖梦.jpeg in Resources */,
 				7F1BEADF1D4CD7F2008AF979 /* f086@2x.png in Resources */,
+				7F9FA56A1D6A0D0700578B63 /* location.png in Resources */,
 				7F1BEA811D4CD7F2008AF979 /* f039@2x.png in Resources */,
 				7F1BEADA1D4CD7F2008AF979 /* f084.png in Resources */,
 				7F1BEA681D4CD7F2008AF979 /* f027.png in Resources */,
@@ -1070,6 +1165,8 @@
 				7F1BEA9C1D4CD7F2008AF979 /* f053.png in Resources */,
 				7F1BEA441D4CD7F2008AF979 /* f009.png in Resources */,
 				7F1BEA9B1D4CD7F2008AF979 /* f052@2x.png in Resources */,
+				7F9FA55D1D69A90C00578B63 /* 藤原妹红.jpeg in Resources */,
+				7F9FA5511D69A90C00578B63 /* 霍青娥.jpg in Resources */,
 				18EFEFDD1D30191A003CF70A /* LaunchScreen.storyboard in Resources */,
 				7F1BEA4B1D4CD7F2008AF979 /* f012@2x.png in Resources */,
 				7F1BEADB1D4CD7F2008AF979 /* f084@2x.png in Resources */,
@@ -1087,6 +1184,7 @@
 				7F1BEA4E1D4CD7F2008AF979 /* f014.png in Resources */,
 				7F1BEAD31D4CD7F2008AF979 /* f080@2x.png in Resources */,
 				7F1BEA761D4CD7F2008AF979 /* f034.png in Resources */,
+				7F9FA5521D69A90C00578B63 /* 洩矢诹访子.jpg in Resources */,
 				7F1BEA7D1D4CD7F2008AF979 /* f037@2x.png in Resources */,
 				7F27EFE51D40C1AE00560077 /* lingmeng.png in Resources */,
 				7F1BEAE31D4CD7F2008AF979 /* f088@2x.png in Resources */,
@@ -1100,8 +1198,10 @@
 				7F1BEA671D4CD7F2008AF979 /* f026@2x.png in Resources */,
 				7F1BEA841D4CD7F2008AF979 /* f041.png in Resources */,
 				7F1BEAE81D4CD7F2008AF979 /* f091.png in Resources */,
+				7F9FA55E1D69A90C00578B63 /* 射命丸文.jpeg in Resources */,
 				7F1BEA701D4CD7F2008AF979 /* f031.png in Resources */,
 				7F1BEAED1D4CD7F2008AF979 /* f093@2x.png in Resources */,
+				7F9FA5571D69A90C00578B63 /* 蕾米莉亚斯卡雷特.jpg in Resources */,
 				18EFEFDA1D30191A003CF70A /* Assets.xcassets in Resources */,
 				7F1BEACF1D4CD7F2008AF979 /* f078@2x.png in Resources */,
 				7F1BEAF21D4CD7F2008AF979 /* f096.png in Resources */,
@@ -1121,16 +1221,20 @@
 				7F1BEA6E1D4CD7F2008AF979 /* f030.png in Resources */,
 				7F1BEA491D4CD7F2008AF979 /* f011@2x.png in Resources */,
 				7F1BEA6B1D4CD7F2008AF979 /* f028@2x.png in Resources */,
+				7F9FA5541D69A90C00578B63 /* 西行寺幽幽子.jpg in Resources */,
 				7F1BEA9F1D4CD7F2008AF979 /* f054@2x.png in Resources */,
 				7F1BEAAB1D4CD7F2008AF979 /* f060@2x.png in Resources */,
 				7F1BEACE1D4CD7F2008AF979 /* f078.png in Resources */,
 				7F1BEAF71D4CD7F2008AF979 /* f098@2x.png in Resources */,
 				7F1BEAA71D4CD7F2008AF979 /* f058@2x.png in Resources */,
+				7F9FA55B1D69A90C00578B63 /* 八云紫.jpg in Resources */,
 				7F1BEA6F1D4CD7F2008AF979 /* f030@2x.png in Resources */,
 				7F1BEAC21D4CD7F2008AF979 /* f072.png in Resources */,
 				7F1BEABD1D4CD7F2008AF979 /* f069@2x.png in Resources */,
 				7F1BEA331D4CD7F2008AF979 /* f000@2x.png in Resources */,
+				7F9FA5691D6A0D0700578B63 /* distance.png in Resources */,
 				7F1BEAF81D4CD7F2008AF979 /* f099.png in Resources */,
+				7F9FA55F1D69A90C00578B63 /* 东风谷早苗.png in Resources */,
 				7F1BEA591D4CD7F2008AF979 /* f019@2x.png in Resources */,
 				7F1BEA2F1D4CD7F2008AF979 /* dv_line.png in Resources */,
 				7F1BEAC71D4CD7F2008AF979 /* f074@2x.png in Resources */,
@@ -1141,6 +1245,7 @@
 				7F1BEAAD1D4CD7F2008AF979 /* f061@2x.png in Resources */,
 				7F1BEAFA1D4CD7F2008AF979 /* people@2x.png in Resources */,
 				7F1BEAB21D4CD7F2008AF979 /* f064.png in Resources */,
+				7F9FA55C1D69A90C00578B63 /* 博丽灵梦.jpeg in Resources */,
 				7F1BEA8F1D4CD7F2008AF979 /* f046@2x.png in Resources */,
 				7F1BEAB31D4CD7F2008AF979 /* f064@2x.png in Resources */,
 				7F1BEA961D4CD7F2008AF979 /* f050.png in Resources */,
@@ -1149,12 +1254,14 @@
 				7F1BEAF61D4CD7F2008AF979 /* f098.png in Resources */,
 				7F1BEAB71D4CD7F2008AF979 /* f066@2x.png in Resources */,
 				7F1BEAD51D4CD7F2008AF979 /* f081@2x.png in Resources */,
+				7F9FA56B1D6A0D0700578B63 /* search.png in Resources */,
 				7F1BEAE41D4CD7F2008AF979 /* f089.png in Resources */,
 				7F1BEA311D4CD7F2008AF979 /* enterprise_default.png in Resources */,
 				7F1BEA521D4CD7F2008AF979 /* f016.png in Resources */,
 				7F1BEA481D4CD7F2008AF979 /* f011.png in Resources */,
 				7F1BEAB11D4CD7F2008AF979 /* f063@2x.png in Resources */,
 				7F1BEA2C1D4CD7F2008AF979 /* AlbumTriangleB.png in Resources */,
+				7F9FA5551D69A90C00578B63 /* 帕秋莉诺蕾姬.jpg in Resources */,
 				7F1BEA461D4CD7F2008AF979 /* f010.png in Resources */,
 				7F1BEAF11D4CD7F2008AF979 /* f095@2x.png in Resources */,
 				7F1BEA3E1D4CD7F2008AF979 /* f006.png in Resources */,
@@ -1181,6 +1288,7 @@
 				7F1BEA4A1D4CD7F2008AF979 /* f012.png in Resources */,
 				7F1BEA691D4CD7F2008AF979 /* f027@2x.png in Resources */,
 				7F1BEA3F1D4CD7F2008AF979 /* f006@2x.png in Resources */,
+				7F9FA55A1D69A90C00578B63 /* 十六夜咲夜.jpg in Resources */,
 				7F1BEA8B1D4CD7F2008AF979 /* f044@2x.png in Resources */,
 				7F1BEAB51D4CD7F2008AF979 /* f065@2x.png in Resources */,
 				7F1BEA721D4CD7F2008AF979 /* f032.png in Resources */,
@@ -1207,15 +1315,18 @@
 				7F1BEAC41D4CD7F2008AF979 /* f073.png in Resources */,
 				7F1BEA3B1D4CD7F2008AF979 /* f004@2x.png in Resources */,
 				7F1BEA7B1D4CD7F2008AF979 /* f036@2x.png in Resources */,
+				7F9FA5591D69A90C00578B63 /* 芙兰朵露斯卡雷特.jpg in Resources */,
 				7FE63F191D3B68C0007F201A /* setting.png in Resources */,
 				7F1BEA391D4CD7F2008AF979 /* f003@2x.png in Resources */,
 				7F1BEACB1D4CD7F2008AF979 /* f076@2x.png in Resources */,
 				7F1BEA8A1D4CD7F2008AF979 /* f044.png in Resources */,
 				7F1BEAE11D4CD7F2008AF979 /* f087@2x.png in Resources */,
 				7F1BEAA31D4CD7F2008AF979 /* f056@2x.png in Resources */,
+				7F9FA5681D6A0D0700578B63 /* contact.png in Resources */,
 				7FE63F181D3B68C0007F201A /* score.png in Resources */,
 				7F1BEA361D4CD7F2008AF979 /* f002.png in Resources */,
 				7F1BEA401D4CD7F2008AF979 /* f007.png in Resources */,
+				7F9FA54F1D69A90C00578B63 /* 古明地恋.jpeg in Resources */,
 				7F1BEAC01D4CD7F2008AF979 /* f071.png in Resources */,
 				7F1BEAD71D4CD7F2008AF979 /* f082@2x.png in Resources */,
 				7F1BEA451D4CD7F2008AF979 /* f009@2x.png in Resources */,
@@ -1226,6 +1337,7 @@
 				7F1BEA411D4CD7F2008AF979 /* f007@2x.png in Resources */,
 				7F1BEA381D4CD7F2008AF979 /* f003.png in Resources */,
 				7F1BEA831D4CD7F2008AF979 /* f040@2x.png in Resources */,
+				7F9FA5531D69A90C00578B63 /* 雾雨魔理沙.jpeg in Resources */,
 				7F1BEAE71D4CD7F2008AF979 /* f090@2x.png in Resources */,
 				7F1BEAD41D4CD7F2008AF979 /* f081.png in Resources */,
 				7F1BEA821D4CD7F2008AF979 /* f040.png in Resources */,
@@ -1236,6 +1348,7 @@
 				7F1BEA5A1D4CD7F2008AF979 /* f020.png in Resources */,
 				7F1BEA8E1D4CD7F2008AF979 /* f046.png in Resources */,
 				7F1BEAB81D4CD7F2008AF979 /* f067.png in Resources */,
+				7F9FA5501D69A90C00578B63 /* 古明地觉.jpg in Resources */,
 				7F1BEA421D4CD7F2008AF979 /* f008.png in Resources */,
 				7F1BEAAC1D4CD7F2008AF979 /* f061.png in Resources */,
 				7F1BEA601D4CD7F2008AF979 /* f023.png in Resources */,
@@ -1258,6 +1371,7 @@
 				7F1BEA3C1D4CD7F2008AF979 /* f005.png in Resources */,
 				7F1BEAEE1D4CD7F2008AF979 /* f094.png in Resources */,
 				7F1BEA911D4CD7F2008AF979 /* f047@2x.png in Resources */,
+				7F9FA5581D69A90C00578B63 /* 蓬莱山辉夜.jpeg in Resources */,
 				7F1BEAA01D4CD7F2008AF979 /* f055.png in Resources */,
 				7F1BEA5B1D4CD7F2008AF979 /* f020@2x.png in Resources */,
 				7F1BEA711D4CD7F2008AF979 /* f031@2x.png in Resources */,
@@ -1291,13 +1405,17 @@
 			files = (
 				7FFF2BD31D508FF700B7B2D1 /* SharingCell.swift in Sources */,
 				7FE63F241D3BB6BB007F201A /* MineTableViewController.swift in Sources */,
-				7F9FA5351D69871C00578B63 /* FishingSportViewController2.swift in Sources */,
+				7F9FA5611D69ACA700578B63 /* CustomTableViewCell.swift in Sources */,
+				7F9FA53D1D69A04B00578B63 /* FishingSpotTableViewController.swift in Sources */,
+				7F9FA5711D6ACAF200578B63 /* DetailFishTableViewController.swift in Sources */,
 				18EFF0051D3020A0003CF70A /* HomePageViewController.swift in Sources */,
+				7F17CAC11D76EDD20077AF73 /* DetailTableViewCell.swift in Sources */,
 				18EFEFD51D30191A003CF70A /* ViewController.swift in Sources */,
 				18EFEFD31D30191A003CF70A /* AppDelegate.swift in Sources */,
 				18EFF0031D302086003CF70A /* FishingSpotViewController.swift in Sources */,
 				18EFF0071D3020B8003CF70A /* SharingViewController.swift in Sources */,
 				18EFF0091D3020C7003CF70A /* MineViewController.swift in Sources */,
+				7F17CAC31D77B83B0077AF73 /* FishingSpot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1495,6 +1613,7 @@
 		18EFEFFF1D30191A003CF70A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
 				INFOPLIST_FILE = quNaDiaoJmUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = qunadiao.quNaDiaoJmUITests;
