@@ -10,7 +10,8 @@ import UIKit
 
 class DetailFishTableViewController: UITableViewController {
 
-    var fishing:FishingSpotTableViewController!
+    var fishingspot:FishingSpot!
+    
     
     @IBOutlet weak var imageView: UIImageView!
     @IBAction func detailButton(sender: AnyObject) {
@@ -43,12 +44,16 @@ class DetailFishTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        imageView.image = UIImage (named: fishingspot.image)
+        //隐藏图片超出控件的部分
+        imageView.clipsToBounds = true
         
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        
+        //隐藏多余的分割线
+        let view = UIView()
+        view.backgroundColor = UIColor.clearColor()
+        tableView.tableFooterView = view
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -60,24 +65,84 @@ class DetailFishTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 2
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        if section == 0{
+            return 1
+        }else{
+            return 3
+        }
     }
 
-    /*
+   
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        
+        let text = ["放鱼时间","放鱼种类","钓场简介"]
+        
+        if indexPath.section == 0{
+        
+            let cell = tableView.dequeueReusableCellWithIdentifier("DetailCell", forIndexPath: indexPath) as! DetailTableViewCell
+        
+            cell.alabel.text = fishingspot.name
+            cell.blabel.text = "¥100/天"
+            cell.alocation.text = fishingspot.location
+            cell.atitle.text = "类型："
+            cell.atype.text = fishingspot.type
+        
+            //对按钮进行操作
+            var pbimage = UIImage(named: "contact.png")
+            pbimage = pbimage?.scaleImage(0.4)
+            cell.photoButton.setImage(pbimage, forState: .Normal)
+            cell.photoButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
+            
+            var dhimage = UIImage(named:"location.png")
+            dhimage = dhimage?.scaleImage(0.4)
+            cell.dhButton.setImage(dhimage, forState: .Normal)
+            cell.dhButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
+            
+            var mapimage = UIImage(named: "distance.png")
+            mapimage = mapimage?.scaleImage(0.4)
+            cell.mapButton.setImage(mapimage, forState: .Normal)
+            cell.mapButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 0)
+            
+            return cell
+        
+        }
+        else{
+            
+            let adcell = tableView.dequeueReusableCellWithIdentifier("ADetailCell", forIndexPath: indexPath) as! EasyFishingSpotTableViewCell
+            
+            adcell.contentlabel.text = text[indexPath.row]
+            adcell.textlabel.text = text[indexPath.row]
+            
+            return adcell
+        }
+        
+        
     }
-    */
+   
 
+    //设置cell高度
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.section == 0{
+            return 124
+        }else{
+            return 71
+        }
+    }
+    
+    
+    //调整section之间的距离
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 10.0
+    }
+    
+    
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -122,5 +187,30 @@ class DetailFishTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
+    
 
+}
+
+extension UIImage {
+    /**
+     *  重设图片大小
+     */
+    func reSizeImage(reSize:CGSize)->UIImage {
+        //UIGraphicsBeginImageContext(reSize);
+        UIGraphicsBeginImageContextWithOptions(reSize,false,UIScreen.mainScreen().scale);
+        self.drawInRect(CGRectMake(0, 0, reSize.width, reSize.height));
+        let reSizeImage:UIImage = UIGraphicsGetImageFromCurrentImageContext();
+        UIGraphicsEndImageContext();
+        return reSizeImage;
+    }
+    
+    /**
+     *  等比率缩放
+     */
+    func scaleImage(scaleSize:CGFloat)->UIImage {
+        let reSize = CGSizeMake(self.size.width * scaleSize, self.size.height * scaleSize)
+        return reSizeImage(reSize)
+    }
 }

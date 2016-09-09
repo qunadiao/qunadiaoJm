@@ -1,0 +1,108 @@
+
+/* Class = "UILabel"; text = "Map"; ObjectID = "19W-uQ-YrG"; */
+"19W-uQ-YrG.text" = "Map";
+
+/* Class = "UILabel"; text = "Distance"; ObjectID = "5En-J2-JAD"; */
+"5En-J2-JAD.text" = "Distance";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "5x1-ot-NB3"; */
+"5x1-ot-NB3.text" = "Name";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "66x-kq-6wH"; */
+"66x-kq-6wH.text" = "Location";
+
+/* Class = "UINavigationItem"; title = "我的"; ObjectID = "Al7-3e-xKh"; */
+"Al7-3e-xKh.title" = "我的";
+
+/* Class = "UINavigationItem"; title = "钓场列表"; ObjectID = "C4o-6d-K90"; */
+"C4o-6d-K90.title" = "钓场列表";
+
+/* Class = "UINavigationItem"; title = "晒晒"; ObjectID = "D6s-lb-y5T"; */
+"D6s-lb-y5T.title" = "晒晒";
+
+/* Class = "UITabBarItem"; title = "钓场"; ObjectID = "Dcb-Xw-pSh"; */
+"Dcb-Xw-pSh.title" = "钓场";
+
+/* Class = "UILabel"; text = "star"; ObjectID = "Gso-Ma-Mox"; */
+"Gso-Ma-Mox.text" = "star";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "H0i-KL-jhl"; */
+"H0i-KL-jhl.text" = "Label";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "IaJ-qC-ioL"; */
+"IaJ-qC-ioL.text" = "Name";
+
+/* Class = "UILabel"; text = "Time"; ObjectID = "Iad-jH-AXO"; */
+"Iad-jH-AXO.text" = "Time";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "Kkl-J9-aFP"; */
+"Kkl-J9-aFP.text" = "Location";
+
+/* Class = "UILabel"; text = "Map"; ObjectID = "OA6-DZ-ocB"; */
+"OA6-DZ-ocB.text" = "Map";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "PNk-dK-OWZ"; */
+"PNk-dK-OWZ.text" = "Price";
+
+/* Class = "UILabel"; text = "Content"; ObjectID = "QT8-m0-dEd"; */
+"QT8-m0-dEd.text" = "Content";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "T9o-mo-Pjd"; */
+"T9o-mo-Pjd.text" = "Title";
+
+/* Class = "UILabel"; text = "Titile"; ObjectID = "YXu-QF-OxO"; */
+"YXu-QF-OxO.text" = "Titile";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "ZcD-Ll-2Cu"; */
+"ZcD-Ll-2Cu.text" = "Type";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Zfe-i0-k0G"; */
+"Zfe-i0-k0G.text" = "Name";
+
+/* Class = "UILabel"; text = "Price"; ObjectID = "dMV-U5-mZA"; */
+"dMV-U5-mZA.text" = "Price";
+
+/* Class = "UILabel"; text = "time"; ObjectID = "dnF-Sh-bVv"; */
+"dnF-Sh-bVv.text" = "time";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "hF0-Hk-34E"; */
+"hF0-Hk-34E.text" = "Name";
+
+/* Class = "UIButton"; normalTitle = "PhoneCode"; ObjectID = "jFt-jg-Phv"; */
+"jFt-jg-Phv.normalTitle" = "PhoneCode";
+
+/* Class = "UITabBarItem"; title = "主页"; ObjectID = "jxo-s3-ZU1"; */
+"jxo-s3-ZU1.title" = "主页";
+
+/* Class = "UINavigationItem"; title = "晒晒"; ObjectID = "lJn-IM-eoS"; */
+"lJn-IM-eoS.title" = "晒晒";
+
+/* Class = "UIButton"; normalTitle = "Navigation"; ObjectID = "miK-8o-oL5"; */
+"miK-8o-oL5.normalTitle" = "Navigation";
+
+/* Class = "UITabBarItem"; title = "我的"; ObjectID = "qtV-iv-650"; */
+"qtV-iv-650.title" = "我的";
+
+/* Class = "UINavigationItem"; title = "钓场详情"; ObjectID = "rR0-DS-S9K"; */
+"rR0-DS-S9K.title" = "钓场详情";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "syX-ez-1nF"; */
+"syX-ez-1nF.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "tL0-67-Nak"; */
+"tL0-67-Nak.text" = "Location";
+
+/* Class = "UITabBarItem"; title = "晒晒"; ObjectID = "u4h-pu-tAk"; */
+"u4h-pu-tAk.title" = "晒晒";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "vqq-Ex-JJJ"; */
+"vqq-Ex-JJJ.text" = "Title";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "vua-Xm-OUX"; */
+"vua-Xm-OUX.text" = "Type";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "yaL-Hu-Ryq"; */
+"yaL-Hu-Ryq.text" = "Type";
+
+/* Class = "UINavigationItem"; title = "主页"; ObjectID = "zi4-BK-eKt"; */
+"zi4-BK-eKt.title" = "主页";

@@ -14,7 +14,7 @@ class MineViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     var allnames:Dictionary<Int, [String]>?
     
-    var  imageName:Dictionary<Int, [String]>?
+    var imageName:Dictionary<Int, [String]>?
     
 
     override func loadView() {
@@ -61,7 +61,7 @@ class MineViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     //在本例中，有4个分区
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 4;
+        return 4
     }
     
     //返回表格行数（也就是返回控件数）
@@ -106,18 +106,20 @@ class MineViewController: UIViewController,UITableViewDataSource,UITableViewDele
         
         //第一区为个人资料
         if secno == 0{
-            let adcell = UITableViewCell(style: UITableViewCellStyle.Subtitle,
-                                         reuseIdentifier: "SwiftCell")
+            let adcell = UITableViewCell(style: UITableViewCellStyle.Subtitle,reuseIdentifier: "SwiftCell")
             adcell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
             
             let image = UIImage(named:"lingmeng.png")
             adcell.imageView?.image = image
             adcell.textLabel?.text = data![indexPath.row]
             
+            
+            
             print(adcell.textLabel?.text)
             adcell.detailTextLabel!.text = "钓钓号：7878787878"
             
-            
+            adcell.imageView?.layer.cornerRadius = 30
+            adcell.clipsToBounds = true
             
             return adcell;
         }
@@ -160,6 +162,17 @@ class MineViewController: UIViewController,UITableViewDataSource,UITableViewDele
     }
     
 
+    
+    //设置cell高度
+     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.section == 0{
+            return 88
+        }else{
+            return 44
+        }
+    }
+
+    
     /*
     // MARK: - Navigation
 

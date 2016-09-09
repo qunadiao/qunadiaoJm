@@ -14,4 +14,7 @@ struct FishingSpot{
     var location:String
     var image:String
     var distance:String
+   
+    // 详细地址，用于钓场详情页面的显示
+    //var detailLocation:String
 }

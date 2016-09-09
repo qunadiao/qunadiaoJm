@@ -1,24 +1,24 @@
 //
-//  MineTableViewController.swift
+//  TableViewController.swift
 //  quNaDiaoJm
 //
-//  Created by 杨智 on 16/7/17.
+//  Created by 杨智 on 16/9/7.
 //  Copyright © 2016年 张航. All rights reserved.
 //
 
 import UIKit
 
-class MineTableViewController: UITableViewController{
-    
+class SharingTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        
+        //隐藏多余的分割线
+        let view = UIView()
+        view.backgroundColor = UIColor.clearColor()
+        tableView.tableFooterView = view
+        tableView.tableHeaderView = view
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,19 +35,24 @@ class MineTableViewController: UITableViewController{
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 1
     }
 
     
-    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCellWithIdentifier("ACell", forIndexPath: indexPath) as! SharingTableViewCell
+        
+        
+        cell.mlogo.image = UIImage(named:"lingmeng.png")
+        cell.name.text = "快乐的小鱼儿"
+        cell.content.text = "发条说说试试看 :)"
+        cell.time.text = "1分钟前"
+        
+        cell.mlogo.layer.cornerRadius = cell.mlogo.frame.size.width/2
+        cell.mlogo.clipsToBounds = true
 
         return cell
     }
-    */
     
 
     /*
