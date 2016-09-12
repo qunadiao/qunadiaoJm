@@ -48,8 +48,8 @@ class SharingTableViewController: UITableViewController {
         cell.content.text = "发条说说试试看 :)"
         cell.time.text = "1分钟前"
         
-        cell.mlogo.layer.cornerRadius = cell.mlogo.frame.size.width/2
-        cell.mlogo.clipsToBounds = true
+//        cell.mlogo.layer.cornerRadius = cell.mlogo.frame.size.width/2
+//        cell.mlogo.clipsToBounds = true
 
         return cell
     }

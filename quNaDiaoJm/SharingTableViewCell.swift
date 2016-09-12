@@ -14,6 +14,8 @@ class SharingTableViewCell: UITableViewCell {
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var content: UILabel!
     @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var reButton: UIButton!
+
     
     
     override func awakeFromNib() {
