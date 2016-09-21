@@ -19,7 +19,6 @@ class DetailTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-//        detailName.text = 
         
         
         // Initialization code

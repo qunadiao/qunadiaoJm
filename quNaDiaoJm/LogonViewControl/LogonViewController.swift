@@ -11,8 +11,10 @@ import UIKit
 class LogonViewController: UIViewController {
 
     override func viewDidLoad() {
-        super.viewDidLoad()
 
+        super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.hidden = false
         // Do any additional setup after loading the view.
     }
 

@@ -12,6 +12,10 @@ class HomePageViewController: UIViewController,UIScrollViewDelegate {
     
     @IBOutlet weak var pagecontrol: UIPageControl!
     @IBOutlet weak var hPScrollView: UIScrollView!
+    @IBOutlet weak var recommend: UIButton!
+    @IBOutlet weak var around: UIButton!
+    @IBOutlet weak var river: UIButton!
+    @IBOutlet weak var sky: UIButton!
     private var timer : NSTimer?
     
     override func viewDidLoad() {
@@ -22,6 +26,8 @@ class HomePageViewController: UIViewController,UIScrollViewDelegate {
 //        homePageVCNavigationBar?.tintColor = UIColor.whiteColor()
 //        homePageVCNavigationBar?.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.whiteColor()]
         initView()
+        
+        //initbutton()
         
         // Do any additional setup after loading the view.
     }
@@ -34,7 +40,7 @@ class HomePageViewController: UIViewController,UIScrollViewDelegate {
         let totalCount:NSInteger = 5
         for index in 0..<totalCount{
             let imageView:UIImageView = UIImageView()
-            let image_X:CGFloat = CGFloat(index) * image_W
+            let image_X:CGFloat = CGFloat(index) * image_W+hPScrollView.contentOffset.x
             imageView.frame = CGRectMake(image_X, image_Y, image_W, image_H)
             let name:NSString = NSString(format:"image_%d",index+1)
             imageView.image = UIImage(named:name as String)
@@ -44,12 +50,14 @@ class HomePageViewController: UIViewController,UIScrollViewDelegate {
         }
         
         self.view.addSubview(pagecontrol)
+        // 解决像素下移
+        self.automaticallyAdjustsScrollViewInsets = false
         
         let content_W:CGFloat = image_W * CGFloat(totalCount)
         self.hPScrollView.contentSize = CGSizeMake(content_W, 0)
         self.hPScrollView.pagingEnabled = true;
         self.hPScrollView.delegate = self
-        self.pagecontrol.backgroundColor = UIColor.blackColor()
+        self.pagecontrol.backgroundColor = UIColor.clearColor()
         self.pagecontrol.numberOfPages = totalCount
         self.addTimer()
     }
@@ -76,7 +84,7 @@ class HomePageViewController: UIViewController,UIScrollViewDelegate {
 //定时器每个隔1s去出发nextImage这个方法，这里重新计算page。然后把timer加入NSRunLoop中，这个类的作用是监听timer是否触发，触发的时候就让他工作，没有触发就让它休眠。
     
     func addTimer(){
-      self.timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(HomePageViewController.nextImage(_:)), userInfo: nil, repeats: true)
+      self.timer = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: #selector(HomePageViewController.nextImage(_:)), userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timer!, forMode: NSRunLoopCommonModes)
 
     }
@@ -95,7 +103,11 @@ class HomePageViewController: UIViewController,UIScrollViewDelegate {
         self.hPScrollView.contentOffset = CGPointMake(x, 0)
     }
     
-    
+//    func initbutton(){
+//        let index:CGFloat = (self.view.frame.size.width - 40)/3 + 20 + 75
+//        around.frame  = CGRectMake(index, 199, 75, 90)
+//        river.frame = CGRectMake(index * 2, 199, 75, 90)
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

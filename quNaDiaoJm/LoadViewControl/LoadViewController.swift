@@ -10,7 +10,20 @@ import UIKit
 
 class LoadViewController: UIViewController {
 
+    
+    @IBOutlet weak var User: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var loading: UIButton!
+    
     override func viewDidLoad() {
+        //设置圆角按钮
+        loading.layer.cornerRadius = 8
+        
+        //隐藏导航栏
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarPosition: .Top, barMetrics: .Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.translucent = true
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
