@@ -8,9 +8,35 @@
 
 import UIKit
 
-class LogonViewController: UIViewController {
-
+class LogonViewController: UIViewController, UITextFieldDelegate, UITextViewDelegate {
+    
+    @IBOutlet weak var phonenumber: UITextField!
+    @IBOutlet weak var code: UITextField!
+    
+    
+    //键盘点击return回收
+    //通过委托来实现放弃第一响应者
+    //UITextField Delegate Method
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    //通过委托来实现放弃第一响应者(方法2)
+    //UITextView Delegate  Method
+//    func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
+//        if (text == "\n") {
+//            textView.resignFirstResponder()
+//            return false
+//        }
+//        return true
+//    }
+//
     override func viewDidLoad() {
+        
+        phonenumber.delegate = self
+        
+        code.delegate = self
 
         super.viewDidLoad()
         
